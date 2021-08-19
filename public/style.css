@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: linear-gradient(to right,rgb(83, 82, 82),black);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    
+}
+table{
+    font-size: 25px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+
+}
+.table-heading{
+    color: rgb(25, 182, 11);
+    margin: 3px 59px;
+    
+}
+.table-data{
+    padding: 12px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.transfer_button{
+    color: white;
+    background: rgb(25, 182, 11);
+}
+
+.transfer_button:hover{
+    color: rgb(25, 182, 11);
+    background: white;
+}
+.user-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    background: rgb(49, 49, 49);
+    color: rgb(214, 212, 212);
+    position: absolute;
+    left: 29%;
+    padding: 11px 10px;
+    border-radius: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.nav-item{
+    color: rgb(253, 253, 253);
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  
+    margin-left: 12px;
+    margin-right: 12px;
+    
+}
+.nav-item a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+.nav-item a:hover{
+    text-decoration: none;
+    color: rgb(2, 190, 2);
+}
+.active {
+    border-bottom: 5px solid rgb(2, 190, 2);
+    color: rgb(255, 255, 255);
+}
+nav img{
+    width: 40px;
+    height:40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+
+.logo{
+    position: relative;
+    right: 25%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    padding-left: 6px;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+.box1{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right,rgb(83, 82, 82),black) ;
+    border-radius: 45px;
+    padding-left: 19px;
+    margin-left: 18px;
+    box-shadow: 2px 1px 14px  rgb(15, 143, 2);
+}
+.container{
+    margin: 5%;
+    
+}
+footer{
+    background: linear-gradient(to right,rgb(83, 82, 82),black);
+    color: white;
+    padding: 10px ;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    margin-top: 8%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fa-users{
+    color: rgb(25, 219, 7);
+   font-size: 150px;
+   margin: 75px 52px;
+}
+.fa-arrows-h{
+    color: rgb(25, 219, 7);
+   font-size: 150px;
+   margin: 75px 60px;
+}
+.fa-history{
+    color: rgb(25, 219, 7);
+    font-size: 150px;
+    margin: 75px 65px;
+ }
+ .fa-users:hover{
+     color: white;
+ }
+ .fa-arrows-h:hover{
+     color: white;
+ }
+ .fa-history:hover{
+     color: white;
+ }
+h2{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.transfer-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    background: rgb(49, 49, 49);
+    color: rgb(214, 212, 212);
+    position: absolute;
+    left: 34%;
+  
+   
+    padding: 10px 10px;
+    border-radius: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sender{
+    width: 100px;
+    height: 25px;
+}
+.transfer_button{
+    display: flex;
+    outline: none;
+    margin-top: 8px;
+    padding: 9px 10px;
+    font-size: 16px;
+    align-content: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    background: rgb(126, 207, 4);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+   
+}
+.transfer_button:hover{
+    color: rgb(126, 207, 4);
+    background: white;
+    cursor: pointer;
+}
+.form-transfer{
+  background-color: rgb(248, 219, 224);
+}
