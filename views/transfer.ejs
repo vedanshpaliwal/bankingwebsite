@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SB | Transfer</title>
+    <link rel="shortcut icon" href="../public/images/logo1.png" type="image/png">
+
+    <link rel="stylesheet" href="../public/css/style.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: rgb(126, 207, 4);
+        }
+
+        .form-transfer {
+            background: linear-gradient(to right, rgb(83, 82, 82), black);
+            border-radius: 12px;
+            width: 40%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <span class="logo"> <img src="../public/images/logo1.png"> Sparks Bank</span>
+
+            <li class="nav-item "> <a href="index"> Home</a></li>
+            <li class="nav-item"> <a href="users">Users</a> </li>
+            <li class="nav-item active"> <a href="transfer">Transfer</a> </li>
+            <li class="nav-item"> <a href="history"> History</a></li>
+            <li class="balance"><p>Balance : <%= balance %></p></li>
+        </ul>
+    </nav>
+    <H2> <center>TRANSFER MONEY</center> </H2>
+    <hr>
+    <form action="/index" method="POST" style=" display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: white;" class="form-transfer">
+
+        <div>
+
+            <select class="form-select" aria-label="Default select example" id="from" name="from" required style="padding: 4px 12px;
+            padding: 7px 215px;
+    outline: none;
+    background: rgb(126, 207, 4);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-top: 11px;">
+                <!-- <option selected>--Choose the Customer--</option> -->
+                <option selected>Yash Jain</option>
+                
+
+
+            </select>
+
+        </div>
+        <br>
+
+        <div>
+
+            <select name="select" id="select"  required style="padding: 4px 12px;
+            padding: 7px 215px;
+    outline: none;
+    background: rgb(126, 207, 4);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-top: 0px;">
+                <!-- <option selected>--Choose the Customer--</option> -->
+                <option selected>Select Receiver</option>
+                <% users.forEach(user=> { %>
+                    <option value=<%=user._id %>> <%= user.name %>
+                    </option>
+                    <% }) %>
+
+
+            </select>
+
+        </div>
+        <div class="amount">
+        <input type="text" name="amount" id="amount" 
+            placeholder="Enter Amount" required style="padding: 4px;
+                padding: 7px 192px;
+    outline: none;
+    background: rgb(126, 207, 4);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-top: 17px;">
+        </div>
+        <div class="button" style="display: flex; flex-direction: row; position: relative; right: 8%;">
+
+            <button class="transfer_button" type="submit"> Transfer </button>
+            <button class="transfer_button"><a href="/users">Back</a></button>
+
+        </div>
+
+    </form>
+
+    </form>
+    </div>
+    <footer>
+        <center>Sparks Bank | Designed By Vedansh Paliwal</center>
+    </footer>
+</body>
+<!-- <script src="../public/script/script.js"></script> -->
+
+</html>

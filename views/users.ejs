@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SB | Users</title>
+    <link rel="shortcut icon" href="../public/images/logo1.png" type="image/png">
+
+    <link rel="stylesheet" href="../public/css/style.css">
+    <style>
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color:rgb(25, 219, 7);
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <span class="logo"> <img src="../public/images/logo1.png"> Sparks Bank</span>
+
+            <li class="nav-item "> <a href="index"> Home</a></li>
+            <li class="nav-item active"> <a href="users">Users</a> </li>
+            <li class="nav-item"> <a href="transfer">Transfer</a> </li>
+            <li class="nav-item"> <a href="history"> History</a></li>
+        </ul>
+    </nav>
+    <h2>User Details</h2>
+    <hr>
+    <div class="user-table" style="flex-direction: column-reverse;">
+        <table>
+            <tr class="table-heading">
+                <th style="padding-left: 16px;">NAME</th>
+                <th style="padding-left: 16px;">ACC.NO</th>
+                <th style="padding-left: 16px;" class="email">EMAIL</th>
+                <th style="padding-left: 16px;">BALANCE</th>
+                <th style="padding-left: 16px;">ACTION</th>
+                
+            </tr>
+            
+            <% users.forEach(user => { %>
+                <tr class="table-row">
+                    <td style="padding-left: 12px;"> <%= user.name %> </td>
+                    <td style="padding-left: 12px;"> <%= user.accountNo %> </td>
+                    <td style="padding-left: 12px;" class="email"> <%= user.email %> </td>
+                    <td style="padding-left: 12px;"> <%= user.balance %> </td>
+                    <td style="padding-left: 12px;"> <button  class="transfer_button">  <a href="transfer">Transfer</a> </button> </td>
+
+                </tr>
+            <% }) %>
+           
+    </table>
+        
+            <!-- <tr>
+             
+           <td style="    padding: 3px 20px;">2</td>
+           <td style="    padding: 3px 20px;">RitikRaj</td>
+           <td style="    padding: 3px 20px;">RitikRaj@gmail.com</td>
+           <td style="    padding: 3px 20px;">1500</td>
+            </tr>
+            
+            <tr>
+             
+                <td style="    padding: 3px 20px;">3</td>
+                <td style="    padding: 3px 20px;">Yash Jain</td>
+                <td style="    padding: 3px 20px;">yashjain@gmail.com</td>
+                <td style="    padding: 3px 20px;">25000</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">4</td>
+                <td style="    padding: 3px 20px;">Ayush Gupta</td>
+                <td style="    padding: 3px 20px;">ayushgupta@gmail.com</td>
+                <td style="    padding: 3px 20px;">55000</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">5</td>
+                <td style="    padding: 3px 20px;">Ritesh Modi</td>
+                <td style="    padding: 3px 20px;">riteshmodi@gmail.com</td>
+                <td style="    padding: 3px 20px;">5400</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">6</td>
+                <td style="    padding: 3px 20px;">Harsh Singh</td>
+                <td style="    padding: 3px 20px;">HarshSingh@gmail.com</td>
+                <td style="    padding: 3px 20px;">1150000</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">7</td>
+                <td style="    padding: 3px 20px;">Sneha Lalan</td>
+                <td style="    padding: 3px 20px;">snehalalan@gmail.com</td>
+                <td style="    padding: 3px 20px;">24560</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">8</td>
+                <td style="    padding: 3px 20px;">Akash Katariya</td>
+                <td style="    padding: 3px 20px;">akashkatariya@gmail.com</td>
+                <td style="    padding: 3px 20px;">98752</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">9</td>
+                <td style="    padding: 3px 20px;">Neha Kapoor</td>
+                <td style="    padding: 3px 20px;">neha4@gmail.com</td>
+                <td style="    padding: 3px 20px;">500</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">10</td>
+                <td style="    padding: 3px 20px;">Rahul Kohli</td>
+                <td style="    padding: 3px 20px;">kohlirahul4@gmail.com</td>
+                <td style="    padding: 3px 20px;">35600</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">11</td>
+                <td style="    padding: 3px 20px;">Radhika Apte</td>
+                <td style="    padding: 3px 20px;">radhika@gmail.com</td>
+                <td style="    padding: 3px 20px;">68955</td>
+                 </tr>
+                 
+            <tr>
+             
+                <td style="    padding: 3px 20px;">12</td>
+                <td style="    padding: 3px 20px;">Chinmay Vyas</td>
+                <td style="    padding: 3px 20px;">Vyas.chinmay@gmail.com</td>
+                <td style="    padding: 3px 20px;">68900</td>
+                 </tr> -->
+       
+            
+        
+    </div>
+    <footer>
+        <center>Sparks Bank | Designed By Vedansh Paliwal</center>
+    </footer>
+    <!-- <script src="../public/script/script.js"></script> -->
+</body>
+</html>

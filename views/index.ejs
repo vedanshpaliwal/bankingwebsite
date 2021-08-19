@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../public/images/logo1.png" type="image/png">
+    <title>SB | HOME</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+ 
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-list">
+            <span class="logo"> <img src="../public/images/logo1.png"> Sparks Bank</span>
+
+            <li class="nav-item active"> <a href="index"> Home</a></li>
+            <li class="nav-item"> <a href="users">Users</a> </li>
+            <li class="nav-item"> <a href="transfer">Transfer</a> </li>
+            <li class="nav-item"> <a href="history"> History</a></li>
+        </ul>
+    </nav>
+
+    <h2>Welcome to Sparks Bank</h2>
+    <hr>
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <span class="user-logo">  <a href="users"><i class="fa fa-users" aria-hidden="true" ></i></a>  </span>
+            </div>
+            <div class="box1">
+                <span class="user-logo">  <a href="transfer"><i class="fa fa-arrows-h" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="box1">
+                <span class="user-logo"> <a href="history"> <i class="fa fa-history" aria-hidden="true" ></i></a> </span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>Sparks Bank | Designed By Vedansh Paliwal</center>
+    </footer>
+</body>
+<script>
+       const users = document.getElementById('users');
+       const transaction = document.getElementById('transaction');
+       const history = document.getElementById('history');
+       users.addEventListener("click",()=>{
+           window.location.href = "users.ejs"
+       })
+</script>
+</html>

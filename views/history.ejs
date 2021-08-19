@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SB | History</title>
+    <link rel="shortcut icon" href="../public/images/logo1.png" type="image/png">
+
+    <link rel="stylesheet" href="../public/css/style.css">
+    
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <span class="logo"> <img src="../public/images/logo1.png"> Sparks Bank</span>
+
+            <li class="nav-item"> <a href="index"> Home</a></li>
+            <li class="nav-item"> <a href="users">Users</a> </li>
+            <li class="nav-item"> <a href="transfer">Transfer</a> </li>
+            <li class="nav-item  active"> <a href="history"> History</a></li>
+        </ul>
+    </nav>
+
+    <h2>Transaction History</h2>
+    <hr>
+    <div class="user-table">
+        <table>
+           <div>
+               <tr class="table-heading">
+
+                
+                <th style="padding-left:30px;">Sender</th>
+                <th style="padding-left:30px;">Receiver</th>
+                <th style="padding-left:30px;">Amount</th>
+                <th style="padding-left:30px;">Date</th>
+                   <hr>
+               </tr>
+        </div>
+        <% history.forEach(hist => { %>
+            <tr>
+                <td style="padding-left: 30px;"> <%= hist.sender %> </td>
+                <td style="padding-left: 30px;"> <%= hist.receiver %> </td>
+                <td style="padding-left: 30px;"> <%= hist.amount %> </td>
+                <td style="padding-left: 30px;" class="date"> <%= hist.date %> </td>
+            </tr>
+        <% }) %>
+    
+        </table>
+    </div>
+    <footer>
+        <center>Sparks Bank | Designed By Vedansh Paliwal</center>
+    </footer>
+</body>
+</html>
